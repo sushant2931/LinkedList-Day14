@@ -19,6 +19,9 @@ public class LinkesListMain {
 		case 3:
 			Operations.insertInBetween();
 			break;
+		case 4:
+			Operations.deleteFirstNode();
+			break;
 
 		}
 	}

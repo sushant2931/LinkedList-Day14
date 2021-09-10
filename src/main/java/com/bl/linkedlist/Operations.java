@@ -1,7 +1,7 @@
 package com.bl.linkedlist;
 
 public class Operations {
-	public static void addeElementAtStart() {
+	public static LinkedList addeElementAtStart() {
 
 		LinkedList linkedList = new LinkedList();
 		linkedList.push(70);
@@ -9,7 +9,7 @@ public class Operations {
 		linkedList.push(56);
 
 		linkedList.print();
-
+		return linkedList;
 	}
 
 	public static void addElementAtEnd() {
@@ -29,5 +29,14 @@ public class Operations {
 		linkedList.print();
 		linkedList.insertInBetween(firstNode, newNode);
 		linkedList.print();
-}
+	}
+
+	public static void deleteFirstNode() {
+
+		LinkedList linkedList = addeElementAtStart();
+		Node deletedNode = linkedList.pop();
+		System.out.println("Delete Node is" + deletedNode.data);
+		linkedList.print();
+	}
+
 }
