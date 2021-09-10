@@ -9,6 +9,8 @@ public class LinkesListMain {
 		System.out.println("Enter 1 to add the data at the start");
 		System.out.println("Enter 2 to add the data at the end");
 		System.out.println("Enter 3 to insert data at the Middle");
+		System.out.println("Enter 4 to delete data at the first");
+		System.out.println("Enter 5 to delete data at the last");
 		switch (scanner.nextInt()) {
 		case 1:
 			Operations.addeElementAtStart();
@@ -22,7 +24,9 @@ public class LinkesListMain {
 		case 4:
 			Operations.deleteFirstNode();
 			break;
-
+		case 5:
+			Operations.deleteLastNode();
+			break;
 		}
 	}
 }
