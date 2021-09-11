@@ -61,4 +61,33 @@ public class Operations {
 		System.out.println("After Insertion");
 		linkedList.print();
 	}
+
+	public static void deleteInBetweenNode() {
+		LinkedList linkedList = new LinkedList();
+		linkedList.push(70);
+		linkedList.push(40);
+		linkedList.push(30);
+		linkedList.push(56);
+		System.out.println("Before deleting");
+		linkedList.print();
+		linkedList.deleteNode(40);
+		System.out.println("After deleting");
+		linkedList.print();
+		int size = linkedList.size();
+		System.out.println("LinkedList size is " + size);
+
+	}
+
+	public static void sortNode() {
+		LinkedList linkedList = new LinkedList();
+		linkedList.push(70);
+		linkedList.push(40);
+		linkedList.push(30);
+		linkedList.push(56);
+		System.out.println("Before");
+		linkedList.print();
+		linkedList.sort();
+		System.out.println("After");
+		linkedList.print();
+	}
 }
